@@ -1,11 +1,9 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
-const PrivateRoute = () => {
-    return (
-        <div>
-            PrivateRoute
-        </div>
-    )
+// eslint-disable-next-line no-unused-vars
+const PrivateRoute = ({ allowedRoles }) => {
+    return <Outlet />
 }
 
 export default PrivateRoute
